@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/detected_text"
+        android:layout_width="match_parent"
+        android:layout_height="1500px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="25dp"
+        android:scrollbars="vertical"
+        android:text="" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:background="#D6D7D7"
+        android:layout_alignParentBottom="true"
+        android:rowCount="1">
+
+        <ImageButton
+            android:id="@+id/take_a_photo"
+            android:layout_width="360px"
+            android:layout_height="360px"
+            android:layout_below="@+id/choose_from_gallery"
+            android:src="@drawable/camera"
+            android:background="#D6D7D7"
+            tools:context=".MainActivity" />
+
+        <ImageButton
+            android:id="@+id/ttsBtn"
+            android:layout_width="360px"
+            android:layout_height="360px"
+            android:layout_above="@+id/detected_text"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#D6D7D7"
+            android:src="@drawable/listen" />
+
+        <ImageButton
+            android:id="@+id/choose_from_gallery"
+            android:layout_width="360px"
+            android:layout_height="360px"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/album"
+            android:background="#D6D7D7"
+            tools:context=".MainActivity" />
+    </GridLayout>
+
+
+</RelativeLayout>
